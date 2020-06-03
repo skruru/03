@@ -1,0 +1,56 @@
+.header {
+    height: 100vh;
+    &_mv {
+        background: #48245A;
+        position: relative;
+        height: 90vh;
+        overflow: hidden;
+        &_img01 {
+            position: absolute;
+            right: 10px;
+            top: 80px;
+            width: 800px;
+        }
+        &_img02 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0.2;
+            height: 100vh;
+            transform: translate(30px,-30px);
+        }
+    }
+    &_logo{
+        color: #fff;
+        font-size: 100px;
+        font-weight: bold;
+        padding-top: 50px;
+        position: absolute;
+        z-index: 1;
+        span {
+            display: block;
+            font-size: 20px;
+        }
+    }
+}
+
+.gnav {
+    height: 10vh;
+    border-bottom: 1px solid #aaa;
+    &_lists {
+        display: flex;
+        justify-content: center;
+    }
+    &_list {
+        margin-right: 30px;
+        line-height: 10vh;
+        a {
+            color: #333;
+            display: block;
+            font-weight: bold;
+        }
+    }
+    &_list:nth-last-child(1) {
+        margin-right: 0;
+    }
+}

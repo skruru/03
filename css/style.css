@@ -182,7 +182,7 @@ a {
   background: #F7F7F7;
 }
 
-.works_card {
+.works_cards {
   display: flex;
   flex-wrap: wrap;
 }
@@ -259,35 +259,66 @@ a {
   width: 45%;
 }
 
-.card {
+.skill_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fa-color {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(-90deg, #667EEA, #764BA2);
+}
+
+.works_card {
   margin-right: calc((100% - 300px*3)/2);
   margin-top: 50px;
 }
 
-.card:nth-child(3n) {
+.works_card:nth-child(3n) {
   margin-right: 0;
 }
 
-.card_img {
+.works_card_img {
   position: relative;
 }
 
-.card_img_inner {
+.works_card_img_inner {
   position: absolute;
   top: 10px;
   left: 12px;
 }
 
-.card_ttl {
+.works_card_ttl {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
 }
 
-.card_txt {
+.works_card_txt {
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.1em;
+}
+
+.skill_card {
+  width: 480px;
+  box-shadow: 10px 10px 10px #aaa;
+  border-radius: 5px;
+  border: 1px solid #f7f7f7;
+  padding: 15px;
+}
+
+.skill_card_ttl {
+  text-align: center;
+  font-weight: bold;
+}
+
+.skill_card_ttl span {
+  display: block;
+  font-size: 50px;
+  text-align: center;
 }
 
 .btn {

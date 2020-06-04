@@ -1,4 +1,4 @@
-.card {
+.works_card {
     margin-right: calc((100% - 300px*3)/2);
     margin-top: 50px;
     &:nth-child(3n){
@@ -19,5 +19,21 @@
     &_txt {
         @include txt;
         letter-spacing: 0.1em;
+    }
+}
+
+.skill_card {
+    width: 480px;
+    box-shadow: 10px 10px 10px #aaa;
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+    padding: 15px;
+    &_ttl {
+        @include txt;
+        span {
+            display: block;
+            font-size: 50px;
+            text-align: center;
+        }
     }
 }

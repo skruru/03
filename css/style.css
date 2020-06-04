@@ -54,6 +54,10 @@ a {
   text-decoration: none;
 }
 
+.p100 {
+  padding: 100px 0;
+}
+
 .content_wrap {
   max-width: 1120px;
   margin: 0 auto;
@@ -176,12 +180,39 @@ a {
 
 .works {
   background: #F7F7F7;
-  padding: 100px 0;
 }
 
 .works_card {
   display: flex;
   flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.feature_link {
+  width: 60%;
+}
+
+.feature_inner {
+  width: 35%;
+}
+
+.feature_item {
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.feature_item:nth-child(1) {
+  margin-top: 10px;
+}
+
+.feature_item_link a {
+  color: aqua;
 }
 
 .card {

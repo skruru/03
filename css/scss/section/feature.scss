@@ -1,0 +1,22 @@
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    &_link {
+        width: 60%;
+    }
+    &_inner {
+        width: 35%;
+    }
+    &_item {
+        font-weight: bold;
+        margin-top: 40px;
+    }
+    &_item:nth-child(1) {
+        margin-top: 0px;
+    }
+    &_item_link a{
+        color: aqua;
+    }
+}

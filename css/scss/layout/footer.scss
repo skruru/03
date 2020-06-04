@@ -1,0 +1,12 @@
+.footer {
+    &_link {
+        background: $main_color;
+        color: #fff;
+        @include txt;
+    }
+    &_copy {
+        background: #000;
+        color: #fff;
+        text-align: center;
+    }
+}

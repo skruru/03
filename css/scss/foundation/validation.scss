@@ -1,0 +1,14 @@
+@mixin txt {
+    text-align: center;
+    font-weight: bold;
+}
+@mixin ttl {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    border-top: 5px solid #333;
+}
+
+$main_color: linear-gradient(90deg, #667EEA,#764BA2);

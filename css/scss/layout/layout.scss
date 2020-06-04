@@ -3,4 +3,26 @@
         max-width: 960px;
         margin: 0 auto;
     }
+    &_min_wrap {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    &_ttl {
+        h2 {
+            @include txt;
+            font-size: 40px;
+            position: relative;
+        }
+        h2::before {
+            @include ttl;
+            left: 35%;
+        }
+        h2::after {
+            @include ttl;
+            right: 35%;
+        }
+        p {
+            text-align: center;
+        }
+    }
 }

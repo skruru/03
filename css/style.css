@@ -59,6 +59,42 @@ a {
   margin: 0 auto;
 }
 
+.content_min_wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content_ttl h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  position: relative;
+}
+
+.content_ttl h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  border-top: 5px solid #333;
+  left: 35%;
+}
+
+.content_ttl h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  border-top: 5px solid #333;
+  right: 35%;
+}
+
+.content_ttl p {
+  text-align: center;
+}
+
 .header {
   height: 100vh;
 }
@@ -123,4 +159,17 @@ a {
 
 .gnav_list:nth-last-child(1) {
   margin-right: 0;
+}
+
+.footer_link {
+  background: linear-gradient(90deg, #667EEA, #764BA2);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer_copy {
+  background: #000;
+  color: #fff;
+  text-align: center;
 }

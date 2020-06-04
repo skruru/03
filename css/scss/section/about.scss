@@ -1,0 +1,35 @@
+.about {
+    background:$main_color;
+    color: #fff;
+    font-weight: bold;
+    &_inner {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_inner_img {
+        width: 25%;
+        img {
+            border-radius: 50%;
+        }
+    }
+    &_inner_txt {
+        width: 70%;
+    }
+    &_link {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        &_ttl {
+            text-align: center;
+            font-size: 20px;
+        }
+        .twitter {
+            width: 45%;
+        }
+        .note {
+            width: 45%;
+        }
+    }
+}

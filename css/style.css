@@ -208,11 +208,55 @@ a {
 }
 
 .feature_item:nth-child(1) {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .feature_item_link a {
   color: aqua;
+}
+
+.about {
+  background: linear-gradient(90deg, #667EEA, #764BA2);
+  color: #fff;
+  font-weight: bold;
+}
+
+.about_inner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_inner_img {
+  width: 25%;
+}
+
+.about_inner_img img {
+  border-radius: 50%;
+}
+
+.about_inner_txt {
+  width: 70%;
+}
+
+.about_link {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_link_ttl {
+  text-align: center;
+  font-size: 20px;
+}
+
+.about_link .twitter {
+  width: 45%;
+}
+
+.about_link .note {
+  width: 45%;
 }
 
 .card {

@@ -3,6 +3,15 @@
         &_wrap {
             width: 96%;
         }
+        &_ttl h2{
+            font-size: 30px;
+        }
+        &_ttl h2::before {
+            left: 25%;
+        }
+        &_ttl h2::after {
+            right: 25%;
+        }
     }
     .header {
         width: 100%;
@@ -76,16 +85,68 @@
             }
         }
     }
-    .btn {
-        width: 100%;
+    .works_cards{
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
     .works_card {
         width: 100%;
         margin-right: 0;
+        margin-top: 15px;
+        &_img img{
+            width: 100%;
+        }
+        &_img img:nth-child(2){
+            width: 96%;
+            left: 9px;
+        }
+    }
+    .btn {
+        width: 80%;
+    }
+    .feature {
+        flex-direction: column;
+        &_link {
+            width: 100%;
+        }
+        &_inner {
+            width: 100%;
+        }
+    }
+    .about{
+        &_inner {
+        flex-direction: column;
+        margin-top: 20px;
+            &_img {
+                width: 50%;
+                text-align: center;
+            }
+            &_txt {
+                width: 85%;
+                margin-top: 10px;
+            }
+        }
+        &_link {
+            margin-top: 20px;
+            flex-direction: column;
+            .twitter {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .note {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .skill_cards {
+        margin-top: 0;
     }
     .skill_card {
         width: 100%;
         margin-right: 0;
     }
-
+    .p100 {
+        padding: 20px 0;
+    }
 }

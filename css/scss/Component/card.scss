@@ -24,10 +24,15 @@
 
 .skill_card {
     width: 480px;
-    box-shadow: 10px 10px 10px #aaa;
+    box-shadow: 5px 5px 5px #aaa;
     border-radius: 5px;
     border: 1px solid #f7f7f7;
     padding: 15px;
+    margin-right: calc(100% - 480px*2);
+    margin-top: 40px;
+    &:nth-child(2n){
+        margin-right: 0;
+    }
     &_ttl {
         @include txt;
         span {

@@ -262,13 +262,14 @@ a {
 .skill_cards {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .fa-color {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(-90deg, #667EEA, #764BA2);
+  background-image: linear-gradient(-45deg, #667EEA, #764BA2);
 }
 
 .works_card {
@@ -304,10 +305,16 @@ a {
 
 .skill_card {
   width: 480px;
-  box-shadow: 10px 10px 10px #aaa;
+  box-shadow: 5px 5px 5px #aaa;
   border-radius: 5px;
   border: 1px solid #f7f7f7;
   padding: 15px;
+  margin-right: calc(100% - 480px*2);
+  margin-top: 40px;
+}
+
+.skill_card:nth-child(2n) {
+  margin-right: 0;
 }
 
 .skill_card_ttl {
@@ -341,4 +348,92 @@ a {
 .btn a:hover {
   background: #aaa;
   color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .content_wrap {
+    width: 96%;
+  }
+  .header {
+    width: 100%;
+    height: 300px;
+  }
+  .header_mv {
+    height: 300px;
+  }
+  .header_mv_img01 {
+    width: 100%;
+    top: 20px;
+    right: 0;
+    transform: translate(20px);
+  }
+  .header_mv_img02 {
+    width: 100%;
+    top: 0;
+    height: 300px;
+    transform: translate(20px);
+  }
+  .header_logo {
+    font-size: 30px;
+    padding-top: 0;
+    bottom: 20px;
+  }
+  .header_logo span {
+    font-size: 14px;
+  }
+  .gnav {
+    border-bottom: none;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translate(100%);
+    transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .gnav_hbg {
+    position: fixed;
+    z-index: 3;
+    top: 15px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .gnav_hbg span {
+    display: block;
+    width: 80%;
+    height: 5px;
+    background: #fff;
+    margin: 9px auto;
+    margin-bottom: 8px;
+    border-radius: 10px;
+  }
+  .gnav_lists {
+    flex-direction: column;
+    margin: 100px auto;
+    width: 94%;
+  }
+  .gnav_list {
+    margin-right: 0;
+  }
+  .gnav_list a {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+  }
+  .btn {
+    width: 100%;
+  }
+  .works_card {
+    width: 100%;
+    margin-right: 0;
+  }
+  .skill_card {
+    width: 100%;
+    margin-right: 0;
+  }
 }

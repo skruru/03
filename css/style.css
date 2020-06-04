@@ -55,12 +55,12 @@ a {
 }
 
 .content_wrap {
-  max-width: 960px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
 .content_min_wrap {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -172,4 +172,67 @@ a {
   background: #000;
   color: #fff;
   text-align: center;
+}
+
+.works {
+  background: #F7F7F7;
+  padding: 100px 0;
+}
+
+.works_card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-right: calc((100% - 300px*3)/2);
+  margin-top: 50px;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card_img {
+  position: relative;
+}
+
+.card_img_inner {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.card_ttl {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card_txt {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.btn {
+  width: 400px;
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+
+.btn a {
+  border-radius: 40px;
+  border: 1px solid #333;
+  color: #333;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.btn a:hover {
+  background: #aaa;
+  color: #fff;
 }

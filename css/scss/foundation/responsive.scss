@@ -63,7 +63,12 @@
             span {
                 font-size: 14px;
             }
-
+        }
+        &_mv2 {
+            height: 500px;
+            &_img01 {
+                width: 80%;
+            }
         }
     }
     .p100 {
@@ -165,6 +170,15 @@
                 font-size: 14px;
             }
 
+        }
+        &_mv2 {
+            height: 300px;
+            &_img01 {
+                width: 100%;
+                top: 20px;
+                right: 0;
+                transform: translate(20px);
+            }
         }
     }
     .works_cards{

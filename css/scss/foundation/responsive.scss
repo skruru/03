@@ -19,6 +19,7 @@
             width: 50px;
             height: 50px;
             background:  rgba(0,0,0,0.6);
+            cursor: pointer;
             span {
                 display: block;
                 width: 80%;
@@ -27,6 +28,7 @@
                 margin: 9px auto;
                 margin-bottom: 8px;
                 border-radius: 10px;
+                transition: 0.5s ease-in;
             }
         }
         &_lists {
@@ -105,6 +107,18 @@
         &:nth-child(2n) {
             margin-right: auto;
         }
+    }
+    .show .gnav {
+        transform: translate(0);
+    }
+    .show .gnav_hbg span:nth-child(1){
+        transform: translate(0, 14px) rotate(45deg);
+    }
+    .show .gnav_hbg span:nth-child(2){
+        transform: translate(120%);
+    }
+    .show .gnav_hbg span:nth-child(3){
+        transform: translate(0, -14px) rotate(-45deg);
     }
 }
 

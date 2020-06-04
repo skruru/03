@@ -17,21 +17,23 @@
                 <h1 class="header_logo">Takahashi<br>Portforio<span>Webデザイナー見習いの実績</span></h1>
             </div>
         </div>
-        <div class="gnav_hbg">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="gnav">
+            <div class="gnav_hbg">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="gnav">
+                <ul class="gnav_lists">
+                    <li class="gnav_list"><a href="#">WORKS</a></li>
+                    <li class="gnav_list"><a href="#">FEATUER</a></li>
+                    <li class="gnav_list"><a href="#">ABOUT</a></li>
+                    <li class="gnav_list"><a href="#">SKILL</a></li>
+                    <li class="gnav_list"><a href="#">CONTACT</a></li>
+                    <li class="gnav_list"><a href="index2.html">NEXT</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="gnav">
-            <ul class="gnav_lists">
-                <li class="gnav_list"><a href="#">WORKS</a></li>
-                <li class="gnav_list"><a href="#">FEATUER</a></li>
-                <li class="gnav_list"><a href="#">ABOUT</a></li>
-                <li class="gnav_list"><a href="#">SKILL</a></li>
-                <li class="gnav_list"><a href="#">CONTACT</a></li>
-                <li class="gnav_list"><a href="index2.html">NEXT</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section class="works p100">
@@ -185,5 +187,13 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.044691722516!2d135.49268865086344!3d34.704052690450354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68f07000001%3A0xa684e6b145ca9d5!2z44Kw44Op44Oz44OV44Ot44Oz44OI5aSn6Ziq!5e0!3m2!1sja!2sjp!4v1591260781433!5m2!1sja!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <p class="footer_copy"><small>Copyright &copy; CC. ALL Rights Reserved</small></p>
     </footer>
+    <script src="js/jquery_min.js"></script>
+    <script>
+        $(function(){
+            $('#gnav').on('click',function(){
+                $(this).toggleClass('show');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -178,6 +178,73 @@ a {
   text-align: center;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 50px;
+}
+
+.modal_link {
+  width: 500px;
+  height: 550px;
+}
+
+.modal_link img {
+  height: 100%;
+}
+
+.modal_inner {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_content {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.modal_close {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.modal_close span {
+  display: block;
+  width: 90%;
+  border: 3px solid #333;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.modal_close span:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.modal_close span:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
 .works {
   background: #F7F7F7;
 }
@@ -291,6 +358,7 @@ a {
 
 .works_card_img {
   position: relative;
+  cursor: pointer;
 }
 
 .works_card_img_inner {
@@ -477,6 +545,9 @@ a {
   .show .gnav_hbg span:nth-child(3) {
     transform: translate(0, -14px) rotate(-45deg);
   }
+  .modal_inner {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -579,5 +650,21 @@ a {
   }
   .p100 {
     padding: 20px 0;
+  }
+  .modal_inner {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .modal_link {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .modal_link img {
+    width: 100%;
+    height: auto;
+  }
+  .modal_content {
+    margin-left: 0;
   }
 }

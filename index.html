@@ -36,6 +36,31 @@
         </div>
     </header>
     <main>
+        <div id="modal" class="modal">
+            <div class="modal_inner">
+                <p class="modal_link"><a href="#"><img src="img/modal.jpg" alt=""></a></p>
+                <div class="modal_content">
+                    <h2>案件名案件名案件名案件名</h2>
+                    <p>仕様ツール：PhotoShop</p>
+                    <dl>
+                        <dt>コンセプト：</dt>
+                        <dd>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</dd>
+                    </dl>
+                    <dl>
+                        <dt>制作で気をつけた点：</dt>
+                        <dd>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</dd>
+                    </dl>
+                </div>
+                <div id="modal_close" class="modal_close">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
         <section class="works p100">
             <div class="content_wrap">
                 <div class="content_ttl">
@@ -45,52 +70,52 @@
                 </div>
                 <div class="works_cards">
                     <div class="works_card">
-                        <a href="#">
+                        <div class="js_modal">
                             <p class="works_card_img">
                                 <img src="img/card.jpg" alt="mac">
                                 <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
                             </p>
-                        </a>
+                        </div>
                         <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
                         <p class="works_card_txt">デザイン/PhotoShop</p>
                     </div>
                     <div class="works_card">
-                        <a href="#">
+                        <div class="js_modal">
                             <p class="works_card_img">
                                 <img src="img/card.jpg" alt="mac">
                                 <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
                             </p>
-                        </a>
+                        </div>
                         <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
                         <p class="works_card_txt">デザイン/PhotoShop</p>
                     </div>
                     <div class="works_card">
-                        <a href="#">
+                        <div class="js_modal">
                             <p class="works_card_img">
                                 <img src="img/card.jpg" alt="mac">
                                 <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
                             </p>
-                        </a>
+                        </div>
                         <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
                         <p class="works_card_txt">デザイン/PhotoShop</p>
                     </div>
                     <div class="works_card">
-                        <a href="#">
+                        <div class="js_modal">
                             <p class="works_card_img">
                                 <img src="img/card.jpg" alt="mac">
                                 <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
                             </p>
-                        </a>
+                        </div>
                         <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
                         <p class="works_card_txt">デザイン/PhotoShop</p>
                     </div>
                     <div class="works_card">
-                        <a href="#">
+                        <div class="js_modal">
                             <p class="works_card_img">
                                 <img src="img/card.jpg" alt="mac">
                                 <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
                             </p>
-                        </a>
+                        </div>
                         <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
                         <p class="works_card_txt">デザイン/PhotoShop</p>
                     </div>
@@ -192,6 +217,12 @@
         $(function(){
             $('#gnav').on('click',function(){
                 $(this).toggleClass('show');
+            });
+            $('.js_modal').on('click',function(){
+                $('#modal').fadeIn();
+            });
+            $('#modal_close').on('click',function(){
+                $('#modal').fadeOut();
             });
         });
     </script>

@@ -1,8 +1,10 @@
 .footer {
     &_link {
         background: $main_color;
-        color: #fff;
         @include txt;
+        a {
+            color: #fff;
+        }
     }
     &_copy {
         background: #000;

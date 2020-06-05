@@ -814,9 +814,12 @@ button.swiper-pagination-bullet {
 
 .footer_link {
   background: linear-gradient(90deg, #667EEA, #764BA2);
-  color: #fff;
   text-align: center;
   font-weight: bold;
+}
+
+.footer_link a {
+  color: #fff;
 }
 
 .footer_copy {

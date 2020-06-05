@@ -185,18 +185,6 @@
         flex-wrap: nowrap;
         flex-direction: column;
     }
-    .works_card {
-        width: 100%;
-        margin-right: 0;
-        margin-top: 15px;
-        &_img img{
-            width: 100%;
-        }
-        &_img img:nth-child(2){
-            width: 96%;
-            left: 9px;
-        }
-    }
     .btn {
         width: 80%;
     }
@@ -263,5 +251,27 @@
         &_content {
             margin-left: 0;
         }
+    }
+    img {
+        width: 100%;
+    }
+    .works_cards {
+        display: none;
+    }
+    .works_card_img_inner {
+        top: 13px;
+        left: 16px;
+        width: 92%;
+    }
+    .swiper-slide {
+        width: 100%;
+    }
+    .swiper-container {
+        display: block;
+    }
+    .works_card {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 15px;
     }
 }

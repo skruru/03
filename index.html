@@ -68,6 +68,73 @@
                     <p>Web（デザインとコーディング）制作、バナー制作の記録です。<br>
                         デザイン練習用の架空サイトや架空バナー、サイトやバナーの模写も含んでおります。</p>
                 </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="works_card">
+                                <div class="js_modal">
+                                    <p class="works_card_img">
+                                        <img src="img/card.jpg" alt="mac">
+                                        <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
+                                    </p>
+                                </div>
+                                <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
+                                <p class="works_card_txt">デザイン/PhotoShop</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works_card">
+                                <div class="js_modal">
+                                    <p class="works_card_img">
+                                        <img src="img/card.jpg" alt="mac">
+                                        <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
+                                    </p>
+                                </div>
+                                <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
+                                <p class="works_card_txt">デザイン/PhotoShop</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works_card">
+                                <div class="js_modal">
+                                    <p class="works_card_img">
+                                        <img src="img/card.jpg" alt="mac">
+                                        <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
+                                    </p>
+                                </div>
+                                <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
+                                <p class="works_card_txt">デザイン/PhotoShop</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works_card">
+                                <div class="js_modal">
+                                    <p class="works_card_img">
+                                        <img src="img/card.jpg" alt="mac">
+                                        <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
+                                    </p>
+                                </div>
+                                <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
+                                <p class="works_card_txt">デザイン/PhotoShop</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works_card">
+                                <div class="js_modal">
+                                    <p class="works_card_img">
+                                        <img src="img/card.jpg" alt="mac">
+                                        <img class="works_card_img_inner" src="img/card_img.jpg" alt="デザイン">
+                                    </p>
+                                </div>
+                                <h3 class="works_card_ttl">案件名案件名案件名案件名</h3>
+                                <p class="works_card_txt">デザイン/PhotoShop</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
                 <div class="works_cards">
                     <div class="works_card">
                         <div class="js_modal">
@@ -213,6 +280,7 @@
         <p class="footer_copy"><small>Copyright &copy; CC. ALL Rights Reserved</small></p>
     </footer>
     <script src="js/jquery_min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script>
         $(function(){
             $('#gnav').on('click',function(){
@@ -224,6 +292,22 @@
             $('#modal_close').on('click',function(){
                 $('#modal').fadeOut();
             });
+        });
+        var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true
+        },
+        speed: 1000,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
         });
     </script>
 </body>
